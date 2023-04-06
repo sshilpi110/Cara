@@ -45,3 +45,91 @@ h1 {
   body {
     width: 100%;
   }
+
+  #header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 80px;
+   background-color:#b6bddf;
+   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+   z-index: 999;
+   position: sticky;
+   top: 0;
+   left: 0;
+
+  }
+  #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    position: sticky;
+  }
+
+  #nav li{ 
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  #nav li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3 ease;
+
+  }
+
+
+  #nav li a:hover,
+  #nav li a.active
+  {
+    color: rgb(9, 9, 116);
+  }
+
+  #nav li a.active::after,
+  #nav li a:hover::after
+  {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: rgb(10, 10, 90) ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+
+  #hero{
+    background-image: url("img/hero4.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  #hero h4{
+    padding-bottom: 15px;
+  }
+
+  #hero h1{
+    color:rgb(10, 10, 90);
+  }
+
+  #hero button{
+    background-image: url("img/button.png");
+    background-color: transparent;
+    color: black;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+  }
