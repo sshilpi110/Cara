@@ -38,19 +38,19 @@
 
             <div class="small-img-group">
                 <div class="small-img-col">
-                    <img src="img/products/f1.jpg" class="small-img" width=100% alt="">
+                    <img src="img/products/f1.jpg" class="smallimg" width=100% alt="">
                 </div>
 
                 <div class="small-img-col">
-                    <img src="img/products/f2.jpg" class="small-img" width=100% alt="">
+                    <img src="img/products/f2.jpg" class="smallimg" width=100% alt="">
                 </div>
 
                 <div class="small-img-col">
-                    <img src="img/products/f3.jpg" class="small-img" width=100% alt="">
+                    <img src="img/products/f3.jpg" class="smallimg" width=100% alt="">
                 </div>
 
                 <div class="small-img-col">
-                    <img src="img/products/f4.jpg" class="small-img" width=100% alt="">
+                    <img src="img/products/f4.jpg" class="smallimg" width=100% alt="">
                 </div>
 
             </div>
@@ -58,24 +58,122 @@
         </div>
 
         <div class="single-pro-deatils">
-    <h6>T-shirts/shirts</h6>
-       <h4>Mens'fashion T-shirt</h4>
-       <h6>$139:00</h6>
-   <select>
-    <option>select size</option>
-    <option>small</option>
-    <option>medium</option>
-    <option>L</option>
-    <option>xL</option>
-    
-   </select>
-   <input type="number" value="1">
-   <button>Add To Cart</button>
-   <h4>products details</h4>
-   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nulla laborum nam eos voluptates voluptatem esse mollitia, voluptas, veniam tenetur, totam expedita facere. Dolore vero molestiae modi assumenda error consequuntur.</p>
+            <h6>T-shirts/shirts</h6>
+            <h4>Mens'fashion T-shirt</h4>
+            <h6>$139:00</h6>
+            <select>
+                <option>select size</option>
+                <option>small</option>
+                <option>medium</option>
+                <option>L</option>
+                <option>xL</option>
+
+            </select>
+            <input type="number" value="1" placeholder="">
+            <button>Add To Cart</button>
+            <h4>products details</h4>
+            <p><span>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nulla laborum nam eos voluptates
+                voluptatem esse mollitia, voluptas, veniam tenetur, totam expedita facere. Dolore vero molestiae modi
+                assumenda error consequuntur.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nulla laborum nam eos voluptates
+                voluptatem esse mollitia, voluptas, veniam tenetur, totam expedita facere. Dolore vero molestiae modi
+                assumenda error consequuntur</span></p>
 
 
         </div>
+
+    </section>
+
+
+    
+    <section id="product1" class="section-p1">
+        <h2>feature products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/products/n1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronauts T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+
+
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="img/products/n2.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronauts T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+
+
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="img/products/n3.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronauts T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+
+
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="img/products/n4.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronauts T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+
+
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+        </div>
+
+
+
 
     </section>
 
@@ -146,3 +244,25 @@
 </body>
 
 </html>
+<script>
+    var MainImg= document.getElementById("MainImg")
+    var smallimg=document.getElementsByClassName("smallimg")
+
+    smallimg[0].onclick=function(){
+        MainImg.src=smallimg[0].src
+    }
+
+    smallimg[1].onclick=function(){
+        MainImg.src=smallimg[1].src
+    }
+
+    smallimg[2].onclick=function(){
+        MainImg.src=smallimg[2].src
+    }
+    smallimg[3].onclick=function(){
+        MainImg.src=smallimg[3].src
+    }
+
+
+</script>
+<script src="script.js"></script>
